@@ -1,0 +1,50 @@
+.FriendCard {
+    width: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.35);
+    color: #657d81;
+  
+    cursor: pointer;
+    transition: all .35s;
+    border-radius: 8px;
+  }
+  
+  .FriendCard:hover {
+    background: rgb(230, 218, 198);
+  }
+  
+  .FriendCard__photo {
+    margin-left: 10px;
+    width: 60px;
+    border-radius: 30px;
+  }
+  
+  .FriendCard__name {
+    padding: 4px 14px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    width: 100%;
+  }
+
+  .FriendCard__btn{
+   
+      background-color: transparent;
+      border: 0;
+      color: #bd637e;
+      font-family: Georgia, 'Times New Roman', Times, serif;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: all 1s;
+    }
+    
+    .FriendCard__btn:hover {
+      transform: scale(1.4);
+      color:rgba(24, 24, 24, 0.45)
+    }
+    
+    .FriendCard__btn:active {
+      color:#fef8ec;
+    }
