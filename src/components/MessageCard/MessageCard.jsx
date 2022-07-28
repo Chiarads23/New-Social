@@ -4,7 +4,7 @@ import Modal from '../Modal';
 import './index.css';
 
 const MessageCard = ({textContent, isRenderedList, onDeleteBtn}) => {
-  const [isModalVisibile, setModalVisibility] = useState(false);
+  const [isModalVisible, setModalVisibility] = useState(false);
 
   const onModalConfirm = () => {
     DELETE('messages', textContent.id)
@@ -25,7 +25,7 @@ const MessageCard = ({textContent, isRenderedList, onDeleteBtn}) => {
           { textContent.date }
         </p>
       </div>
-      { isModalVisibile && <Modal modalTextContent="Vuoi cancellare il messaggio?" onModalConfirm={onModalConfirm} setModalVisibility={setModalVisibility}/>}
+      { isModalVisible && <Modal modalTextContent="Vuoi cancellare il messaggio?" onModalConfirm={onModalConfirm} setModalVisibility={setModalVisibility}/>}
     </div>
   )
 }

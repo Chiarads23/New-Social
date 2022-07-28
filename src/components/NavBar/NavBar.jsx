@@ -1,15 +1,16 @@
-import logo from '../../assets/logo.svg';
+import logo from "../../assets/logo.svg";
 
 import "./index.css";
 
-
 const ListItem = (link = "/", title) => {
   return (
-    <li className='ListItem'>
-      <a className='ListItem__link' href={link}>{title}</a>
+    <li className="ListItem">
+      <a className="ListItem__link" href={link}>
+        {title}
+      </a>
     </li>
-  )
-}
+  );
+};
 
 const NavBar = () => {
   const linkList = [
@@ -27,14 +28,19 @@ const NavBar = () => {
       id: 3,
       title: "Contacts",
       url: "#",
-    }
+    },
+    {
+      id: 4,
+      title: localStorage.getItem("username") || "no-user",
+      url: "#",
+    },
   ];
 
   return (
     <div className="NavBar">
       <img className="NavBar__img" src={logo} alt="logo" />
       <ul className="NavBar__list">
-     {/* {
+        {/* {
         linkList.map(link => <ListItem title={link.title} link={link.url} key={link.id}/>)
       
      } */}
